@@ -1,0 +1,40 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+
+#app {
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+#amount {
+  background-color: #edf4f5;
+  border: none;
+  padding: 5px 10px;
+}
+
+input[type="radio"] {
+  background-color: hsl(183, 100%, 15%);
+}
+
+#people {
+  background-color: #edf4f5;
+  border: none;
+  padding: 5px 10px;
+}
+
+#bill {
+  text-align: left;
+}
+
+#tip {
+  text-align: left;
+}
+
+#partysize {
+  text-align: left;
+}
