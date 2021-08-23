@@ -2,20 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Tip calculator app</title>
+  <title>Tip Calculator</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<div>
 <div id="app">
     <form id="bill">
 <label for="amount">Bill</label> <br>
@@ -36,28 +29,17 @@
             <label for="fifty">50%</label>
             <input type="radio" name="percent" id="fifty" value="fifty">
         </p>
-        <p>Custom Placeholder</p>
 </form>
-
-  <form id="partysize">
-    <label for="people">Number of People</label> <br>
-    <input type="number" id="people" name="people">
-</form>
+<br>
 <div id="totals">
  <div id="tipamount"> Tip Amount
-  / person
   </div>
 <div id="total">
   Total
-  / person
 </div>
 <br>
   <button id="reset">Reset</button>
   </div>
-</div>
-<div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="#">Kaia Scheirman</a>.
 </div>
 </body>
 </html>

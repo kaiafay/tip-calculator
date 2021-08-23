@@ -18,37 +18,20 @@ body {
   background-color: #edf4f5;
   border: none;
   padding: 5px 10px;
+  font-family: "Space Mono", monospace;
 }
 
 input[type="radio"] {
   background-color: hsl(183, 100%, 15%);
 }
 
-#people {
-  background-color: #edf4f5;
-  border: none;
-  padding: 5px 10px;
-}
-
-#bill {
-  text-align: left;
-}
-
-#tip {
-  text-align: left;
-}
-
-#partysize {
-  text-align: left;
-}
-
 #tipamount {
-  text-align: right;
+  text-align: left;
   color: white;
 }
 
 #total {
-  text-align: right;
+  text-align: left;
   color: white;
 }
 
@@ -57,14 +40,11 @@ input[type="radio"] {
   padding: 2px 50px;
   border: none;
   border-radius: 5px;
+  font-family: "space Mono", monospace;
 }
 
 #totals {
   background-color: hsl(183, 100%, 15%);
   padding: 20px;
   border-radius: 10px;
-}
-
-.attribution {
-  padding-top: 13%;
 }
