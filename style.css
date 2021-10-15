@@ -21,8 +21,12 @@ body {
   font-family: "Space Mono", monospace;
 }
 
-input[type="radio"] {
+.tipButton {
   background-color: hsl(183, 100%, 15%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
 }
 
 #tipamount {

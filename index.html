@@ -15,21 +15,14 @@
 <input type="number" id="amount" name="amount" placeholder="$" step=".01">
     </form>
 <br>
- <form id="tip">
   <label for="percentage">Select Tip %</label>
         <p>
-            <label for="five">5%</label>
-            <input type="radio" name="percent" id="five" value="five">
-            <label for="ten">10%</label>
-            <input type="radio" name="percent" id="ten" value="ten">
-            <label for="fifteen">15%</label>
-            <input type="radio" name="percent" id="fifteen" value="fifteen">
-            <label for="twentyfive">25%</label>
-            <input type="radio" name="percent" id="twentyfive" value="twentyfive">
-            <label for="fifty">50%</label>
-            <input type="radio" name="percent" id="fifty" value="fifty">
+           <button class="tipButton activeButton default" id="five">5%</button>
+           <button class="tipButton" id="ten">10%</button>
+           <button class="tipButton" id="fifteen">15%</button>
+           <button class="tipButton" id="twentyfive">25%</button>
+           <button class="tipButton" id="fifty">50%</button>
         </p>
-</form>
 <br>
 <div id="totals">
  <div id="tipamount"> Tip Amount
