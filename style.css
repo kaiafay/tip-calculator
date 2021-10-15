@@ -27,6 +27,13 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.active,
+.btn:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: black;
 }
 
 #tipamount {
@@ -45,6 +52,7 @@ body {
   border: none;
   border-radius: 5px;
   font-family: "space Mono", monospace;
+  cursor: pointer;
 }
 
 #totals {
