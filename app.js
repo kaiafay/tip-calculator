@@ -37,8 +37,10 @@ tipAmount.innerHTML = `$${tip}`;
 total.innerHTML = `$${totalAmount}`;
 }
 
+console.log('Here');
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
+    console.log("CLICK");
     let tipValue = e.target.innerText;
     tipValue = tipValue.substr(0, tipValue.length - 1);
 
