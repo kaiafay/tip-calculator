@@ -1,25 +1,53 @@
-const bill = document.getElementById("amount");
-const tipFive = document.getElementById("five");
-const tipTen = document.getElementById("ten");
-const tipFifteen = document.getElementById("fifteen");
-const tipTwentyfive = document.getElementById("twentyfive");
-const tipFifty = document.getElementById("fifty");
-const tipAmount = document.getElementById("tipamount");
-const total = document.getElementById("total");
-const reset = document.getElementById("reset");
+const bill = document.getElementById("amount"); // bill amount
+const tipAmount = document.getElementsById("tipamount"); // total tip amount
+const total = document.getElementsById("total"); // total bill amount 
+const reset = document.getElementById("reset"); // reset button
+const buttons = document.querySelectorAll(".tipButton"); // tip buttons
 
-const calcTip = () => {
-  total.textContent = '$' + bill
+// function that presents total bill amount
+// const calcTip = () => {
+//   total.textContent = '$' + bill
+// }
+
+// // function that calculates tip
+// const getBillAmount = () => {
+//     bill = document.getElementById("amount");
+//     if (!bill.value || Number(bill.value) === 0) {
+//         billValue = 0;
+//         calcTip();
+//         return;
+//     }
+//     billValue = Number(bill.value);
+//     calcTip();
+// }
+
+// tipFive.onclick = function() {
+//   alert("I AM CLICKED!");
+// }
+
+function calcTip(bill, tipAmount) {
+  let tipAmount = bill * (tipAmount / 100);
+  let tip = Math.floor(tipAmount * 100) / 100;
+  tip = tip.toFixed(2);
+
+let totalAmount = tipAmount + bill; 
+totalAmount = totalAmount.toFixed(2);
+
+tipAmount.innerHTML = `$${tip}`;
+total.innerHTML = `$${totalAmount}`;
 }
 
-const getBillAmount = () => {
-    bill = document.getElementById("amount");
-    if (!bill.value || Number(bill.value) === 0) {
-        billValue = 0;
-        calcTip();
-        return;
-    }
-    billValue = Number(bill.value);
-    calcTip();
-}
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    let tipValue = e.target.innerText;
+    tipValue = tipValue.substr(0, tipValue.length - 1);
+
+    if(bill.value === "") return;
+
+    calcTip(
+      parseFloat(bill.value),
+      parseInt(tipValue)
+    )
+  })
+})
 

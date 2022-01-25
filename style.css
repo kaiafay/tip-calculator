@@ -30,6 +30,11 @@ body {
   cursor: pointer;
 }
 
+.result {
+  text-align: left;
+  color: white;
+}
+
 .active,
 .btn:hover {
   background-color: hsl(185, 41%, 84%);
@@ -37,12 +42,12 @@ body {
 }
 
 #tipamount {
-  text-align: left;
+  text-align: right;
   color: white;
 }
 
 #total {
-  text-align: left;
+  text-align: right;
   color: white;
 }
 
