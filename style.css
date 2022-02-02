@@ -35,8 +35,8 @@ body {
   color: white;
 }
 
-.active,
-.btn:hover {
+.tipButton:hover,
+.tipButton:focus {
   background-color: hsl(185, 41%, 84%);
   color: black;
 }

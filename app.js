@@ -18,8 +18,6 @@ total.innerHTML = `$${totalAmount}`;
 
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
-    button.removeAttribute('class', 'active');
-    e.target.setAttribute('class', 'tipButton active');
     let tipValue = e.target.innerText;
     tipValue = tipValue.substr(0, tipValue.length - 1);
 
