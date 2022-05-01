@@ -30,3 +30,7 @@ buttons.forEach((button) => {
   })
 })
 
+reset.addEventListener('click', (e) => {
+  tipAmountEl.innerHTML = '$0.00';
+  total.innerHTML = '$0.00';
+});
